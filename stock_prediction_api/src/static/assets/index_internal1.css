@@ -4096,100 +4096,72 @@
 }
 
 :root {
-  --radius: 8px;
-  /* TradingView Light Theme */
-  --background: #ffffff;
-  --foreground: #131722;
-  --card: #ffffff;
-  --card-foreground: #131722;
-  --popover: #ffffff;
-  --popover-foreground: #131722;
-  --primary: #2962ff;
-  --primary-foreground: #ffffff;
-  --secondary: #f7f9fb;
-  --secondary-foreground: #434651;
-  --muted: #f7f9fb;
-  --muted-foreground: #787b86;
-  --accent: #e3effd;
-  --accent-foreground: #2962ff;
-  --destructive: #f23645;
-  --constructive: #089981;
-  --border: #e0e3eb;
-  --input: #f7f9fb;
-  --ring: #2962ff;
-
-  /* Chart colors matching TradingView */
-  --chart-1: #2962ff; /* Blue for primary data */
-  --chart-2: #f23645; /* Red for bearish */
-  --chart-3: #089981; /* Green for bullish */
-  --chart-4: #ff6d00; /* Orange for volume */
-  --chart-5: #9c27b0; /* Purple for secondary data */
-
-  /* Sidebar colors */
-  --sidebar: #ffffff;
-  --sidebar-foreground: #131722;
-  --sidebar-primary: #2962ff;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f7f9fb;
-  --sidebar-accent-foreground: #434651;
-  --sidebar-border: #e0e3eb;
-  --sidebar-ring: #2962ff;
-
-  /* TradingView specific colors */
-  --tv-blue: #2962ff;
-  --tv-red: #f23645;
-  --tv-green: #089981;
-  --tv-orange: #ff6d00;
-  --tv-gray-50: #f7f9fb;
-  --tv-gray-100: #e0e3eb;
-  --tv-gray-200: #d1d4dc;
-  --tv-gray-300: #b2b5be;
-  --tv-gray-400: #9598a1;
-  --tv-gray-500: #787b86;
-  --tv-gray-600: #6a6d78;
-  --tv-gray-700: #434651;
-  --tv-gray-800: #2a2e39;
-  --tv-gray-900: #131722;
+  --radius: .625rem;
+  --background: oklch(100% 0 0);
+  --foreground: oklch(14.5% 0 0);
+  --card: oklch(100% 0 0);
+  --card-foreground: oklch(14.5% 0 0);
+  --popover: oklch(100% 0 0);
+  --popover-foreground: oklch(14.5% 0 0);
+  --primary: oklch(20.5% 0 0);
+  --primary-foreground: oklch(98.5% 0 0);
+  --secondary: oklch(97% 0 0);
+  --secondary-foreground: oklch(20.5% 0 0);
+  --muted: oklch(97% 0 0);
+  --muted-foreground: oklch(55.6% 0 0);
+  --accent: oklch(97% 0 0);
+  --accent-foreground: oklch(20.5% 0 0);
+  --destructive: oklch(57.7% .245 27.325);
+  --border: oklch(92.2% 0 0);
+  --input: oklch(92.2% 0 0);
+  --ring: oklch(70.8% 0 0);
+  --chart-1: oklch(64.6% .222 41.116);
+  --chart-2: oklch(60% .118 184.704);
+  --chart-3: oklch(39.8% .07 227.392);
+  --chart-4: oklch(82.8% .189 84.429);
+  --chart-5: oklch(76.9% .188 70.08);
+  --sidebar: oklch(98.5% 0 0);
+  --sidebar-foreground: oklch(14.5% 0 0);
+  --sidebar-primary: oklch(20.5% 0 0);
+  --sidebar-primary-foreground: oklch(98.5% 0 0);
+  --sidebar-accent: oklch(97% 0 0);
+  --sidebar-accent-foreground: oklch(20.5% 0 0);
+  --sidebar-border: oklch(92.2% 0 0);
+  --sidebar-ring: oklch(70.8% 0 0)
 }
 
 .dark {
-  /* TradingView Dark Theme */
-  --background: #131722;
-  --foreground: #d1d4dc;
-  --card: #1e222d;
-  --card-foreground: #d1d4dc;
-  --popover: #1e222d;
-  --popover-foreground: #d1d4dc;
-  --primary: #2962ff;
-  --primary-foreground: #ffffff;
-  --secondary: #2a2e39;
-  --secondary-foreground: #b2b5be;
-  --muted: #2a2e39;
-  --muted-foreground: #787b86;
-  --accent: #1e222d;
-  --accent-foreground: #2962ff;
-  --destructive: #f23645;
-  --constructive: #089981;
-  --border: #434651;
-  --input: #2a2e39;
-  --ring: #2962ff;
-
-  /* Chart colors for dark theme */
-  --chart-1: #2962ff;
-  --chart-2: #f23645;
-  --chart-3: #089981;
-  --chart-4: #ff6d00;
-  --chart-5: #9c27b0;
-
-  /* Sidebar colors for dark theme */
-  --sidebar: #1e222d;
-  --sidebar-foreground: #d1d4dc;
-  --sidebar-primary: #2962ff;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #2a2e39;
-  --sidebar-accent-foreground: #b2b5be;
-  --sidebar-border: #434651;
-  --sidebar-ring: #2962ff;
+  --background: oklch(14.5% 0 0);
+  --foreground: oklch(98.5% 0 0);
+  --card: oklch(20.5% 0 0);
+  --card-foreground: oklch(98.5% 0 0);
+  --popover: oklch(20.5% 0 0);
+  --popover-foreground: oklch(98.5% 0 0);
+  --primary: oklch(92.2% 0 0);
+  --primary-foreground: oklch(20.5% 0 0);
+  --secondary: oklch(26.9% 0 0);
+  --secondary-foreground: oklch(98.5% 0 0);
+  --muted: oklch(26.9% 0 0);
+  --muted-foreground: oklch(70.8% 0 0);
+  --accent: oklch(26.9% 0 0);
+  --accent-foreground: oklch(98.5% 0 0);
+  --destructive: oklch(70.4% .191 22.216);
+  --border: oklch(100% 0 0/.1);
+  --input: oklch(100% 0 0/.15);
+  --ring: oklch(55.6% 0 0);
+  --chart-1: oklch(48.8% .243 264.376);
+  --chart-2: oklch(69.6% .17 162.48);
+  --chart-3: oklch(76.9% .188 70.08);
+  --chart-4: oklch(62.7% .265 303.9);
+  --chart-5: oklch(64.5% .246 16.439);
+  --sidebar: oklch(20.5% 0 0);
+  --sidebar-foreground: oklch(98.5% 0 0);
+  --sidebar-primary: oklch(48.8% .243 264.376);
+  --sidebar-primary-foreground: oklch(98.5% 0 0);
+  --sidebar-accent: oklch(26.9% 0 0);
+  --sidebar-accent-foreground: oklch(98.5% 0 0);
+  --sidebar-border: oklch(100% 0 0/.1);
+  --sidebar-ring: oklch(55.6% 0 0)
 }
 
 @property --tw-translate-x {
@@ -4555,3 +4527,150 @@
     opacity: 0
   }
 }
+
+
+
+
+
+/* TradingView-style Volume Bars */
+.volume-bar.up {
+  background-color: var(--color-green-400); /* TradingView green for up volume in light theme */
+  opacity: 0.7;
+}
+
+.volume-bar.down {
+  background-color: var(--color-red-400); /* TradingView red for down volume in light theme */
+  opacity: 0.7;
+}
+
+/* TradingView-style Toolbar Enhancements */
+.toolbar {
+  background-color: #FFFFFF; /* Light background for toolbars */
+  border-bottom: 1px solid #E0E3EB; /* Subtle light border */
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toolbar-button {
+  color: var(--foreground);
+  background-color: transparent;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.toolbar-button:hover {
+  background-color: #2A2E39;
+}
+
+.toolbar-button.active {
+  background-color: var(--color-blue-500);
+  color: var(--color-white);
+}
+
+
+
+
+
+/* Google Fonts Integration */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root,
+:host {
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+
+
+/* Styling for the simulated volume bars */
+.volume-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; /* Adjust as needed for desired height of volume section */
+  display: flex;
+  align-items: flex-end;
+  pointer-events: none; /* Allow clicks to pass through to chart below */
+  z-index: 1; /* Ensure volume bars are above chart but below other UI */
+}
+
+.volume-bar {
+  flex-grow: 1;
+  margin-inline: 0.5px; /* Small gap between bars */
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+
+
+
+/* TradingView-style Light Theme */
+body {
+  --background: #FFFFFF;
+  --foreground: #131722;
+  --color-gray-300: #E0E3EB;
+  --color-gray-400: #B2B5BE;
+  --color-slate-900: #131722;
+  --color-red-400: #FF5252;
+  --color-green-400: #00B06B;
+  --color-blue-400: #2196F3;
+  --color-purple-400: #9C27B0;
+  --color-purple-900: #673AB7;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+}
+
+/* General light theme adjustments */
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+.text-gray-300 {
+  color: var(--color-gray-300);
+}
+
+.text-gray-400 {
+  color: var(--color-gray-400);
+}
+
+.bg-slate-900 {
+  background-color: var(--color-slate-900);
+}
+
+.text-red-400 {
+  color: var(--color-red-400);
+}
+
+.text-green-400 {
+  color: var(--color-green-400);
+}
+
+.text-blue-400 {
+  color: var(--color-blue-400);
+}
+
+.text-purple-400 {
+  color: var(--color-purple-400);
+}
+
+.text-purple-900 {
+  color: var(--color-purple-900);
+}
+
+.text-black {
+  color: var(--color-black);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+
