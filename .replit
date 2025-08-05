@@ -9,7 +9,7 @@ packages = ["glibcLocales", "zammad"]
 run = ["sh", "-c", "vite build"]
 
 [workflows]
-runButton = "Build and Run"
+runButton = "Dev Server"
 
 [[workflows.workflow]]
 name = "Dev Server"
@@ -18,7 +18,7 @@ author = 19938695
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd stock_prediction_frontend && npm run dev"
+args = "cd stock_prediction_frontend && npm run dev -- --host 0.0.0.0 --port 5000"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
