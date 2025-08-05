@@ -6,4 +6,33 @@ channel = "stable-25_05"
 packages = ["glibcLocales"]
 
 [deployment]
-run = ["sh", "-c", "npm build"]
+run = ["sh", "-c", "vite build"]
+
+[workflows]
+runButton = "Build and Run"
+
+[[workflows.workflow]]
+name = "Build and Run"
+author = 19938695
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd stock_prediction_frontend && npm run build"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd stock_prediction_api/src && python main.py"
+
+[[workflows.workflow]]
+name = "Dev Server"
+author = 19938695
+mode = "parallel"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd stock_prediction_frontend && npm run dev"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd stock_prediction_api/src && python main.py"
