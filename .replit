@@ -6,7 +6,8 @@ channel = "stable-25_05"
 packages = ["glibcLocales", "zammad"]
 
 [deployment]
-run = ["sh", "-c", "vite build"]
+run = ["sh", "-c", "cd stock_prediction_api/src && python main.py"]
+build = ["sh", "-c", "cd stock_prediction_frontend && npm install && npm run build && cp -r dist/* ../stock_prediction_api/src/static/"]
 
 [workflows]
 runButton = "Dev Server"
