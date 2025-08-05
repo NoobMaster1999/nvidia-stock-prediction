@@ -36,3 +36,7 @@ args = "cd stock_prediction_frontend && npm run dev"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "cd stock_prediction_api/src && python main.py"
+
+[[ports]]
+localPort = 8080
+externalPort = 80
