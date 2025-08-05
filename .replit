@@ -1,0 +1,9 @@
+modules = ["python-3.12", "c-clang14", "cpp-clang14", "nodejs-20"]
+run = "npm build"
+
+[nix]
+channel = "stable-25_05"
+packages = ["glibcLocales"]
+
+[deployment]
+run = ["sh", "-c", "npm build"]
