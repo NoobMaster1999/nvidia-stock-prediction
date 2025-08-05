@@ -65,7 +65,7 @@ function App() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-white mb-4 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-            Stock Analysis
+            Stock Analysis Fine
           </h1>
           <p className="text-xl text-gray-300">
             AI-powered stock price prediction using Markov chain
