@@ -38,5 +38,9 @@ task = "shell.exec"
 args = "cd stock_prediction_api/src && python main.py"
 
 [[ports]]
+localPort = 5000
+externalPort = 5000
+
+[[ports]]
 localPort = 8080
 externalPort = 80
